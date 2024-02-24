@@ -1,0 +1,15 @@
+
+*.log
+
+node_modules
+
+*.local
+.env.*.local
+
+.idea
+
+package-lock.json
+
+app-express/public
+app-express/store
+app-express/secrets.json

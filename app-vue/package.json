@@ -1,0 +1,32 @@
+{
+  "name": "tg-name",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:back": "cd ../app-express && npm run dev",
+    "dev:full": "concurrently 'npm:dev' 'npm:dev:back'",
+    "build": "vite build",
+    "build-dev": "vite build --mode dev",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@quasar/extras": "^1.16.9",
+    "axios": "^1.6.5",
+    "lodash": "^4.17.21",
+    "moment": "^2.30.1",
+    "pinia": "^2.1.7",
+    "pinia-plugin-persistedstate": "^3.2.1",
+    "quasar": "^2.14.3",
+    "vue": "^3.3.11",
+    "vue-router": "^4.2.5"
+  },
+  "devDependencies": {
+    "@quasar/vite-plugin": "^1.6.0",
+    "@vitejs/plugin-vue": "^4.5.2",
+    "concurrently": "^8.2.2",
+    "sass": "^1.70.0",
+    "vite": "^5.0.8"
+  }
+}
